@@ -1,0 +1,6 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><title>Penny storage check</title></head><body><h1>Penny storage check</h1><p>This development fixture reads only the presence of legacy receipt storage.</p><output id="result">Checking…</output><script type="module">
+const receipts = localStorage.getItem('alfred-receipts') !== null;
+const draft = localStorage.getItem('alfred-draft') !== null;
+const pdfs = (await indexedDB.databases()).some(database => database.name === 'alfred-receipts');
+document.querySelector('output').textContent = `Saved receipts present: ${receipts}. Saved draft present: ${draft}. Saved PDF database present: ${pdfs}.`;
+</script></body></html>

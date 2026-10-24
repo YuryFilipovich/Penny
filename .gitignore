@@ -1,0 +1,15 @@
+node_modules
+dist
+.env
+.env.*
+!.env.example
+
+data/
+
+usage/
+
+# Local hosting and agent configuration.
+.openai/
+.agents/
+.codex/
+.aws/

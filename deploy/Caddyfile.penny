@@ -1,0 +1,8 @@
+# Example for Caddy on the same host as Penny. Adjust the site address and
+# upstream for your own network. Keep Penny behind access controls.
+http://localhost {
+    reverse_proxy 127.0.0.1:18787 {
+        # Deliver scan progress events as soon as the backend sends them.
+        flush_interval -1
+    }
+}
