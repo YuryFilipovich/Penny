@@ -11,6 +11,20 @@ Penny turns grocery receipt PDFs into a reviewable product list, then imports co
 
 The UI supports undo and redo during review. Confirming a stock purchase is a real Grocy write and cannot be undone through Penny.
 
+## Screenshots
+
+### Upload a receipt
+
+![Penny upload screen](docs/images/Penny1.png)
+
+### Scan the receipt
+
+![Penny scanning a sample receipt](docs/images/Penny2.png)
+
+### Review products beside the original
+
+![Penny receipt review screen](docs/images/Penny3.png)
+
 ## Quick start
 
 Requires Node.js **22.18 or newer**, npm, and API keys for OpenAI and Jev. Grocy and its API key are required for confirmation, but not for trying the sample.
