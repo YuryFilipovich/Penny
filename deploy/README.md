@@ -32,7 +32,7 @@ The default is 10 accepted extraction attempts per Europe/Warsaw calendar day, s
 
 The `penny-usage` volume stores only the daily counter. Reviews and PDFs are temporary and disappear when the browser page closes or reloads; Penny does not keep a receipt archive. Do not run `docker compose down -v` unless you intend to erase the counter. Run a single Penny instance because quota reservations and Grocy import locking are process-local.
 
-The container runs as a non-root user with a read-only filesystem, temporary `/tmp`, dropped capabilities, and resource limits. Update with `docker compose up -d --build`; inspect logs with `docker compose logs --tail=100 penny`.
+The container runs as a non-root user with a read-only filesystem, temporary `/tmp`, dropped capabilities, and resource limits. After updating the Node image version in the Dockerfile, pull and rebuild with `docker compose build --pull` and apply it with `docker compose up -d`; inspect logs with `docker compose logs --tail=100 penny`. Keep the image version updated for future security releases.
 
 ## Grocy connection check
 

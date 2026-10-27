@@ -27,7 +27,7 @@ The UI supports undo and redo during review. Confirming a stock purchase is a re
 
 ## Quick start
 
-Requires Node.js **22.18 or newer**, npm, and API keys for OpenAI and Jev. Grocy and its API key are required for confirmation, but not for trying the sample.
+Requires Node.js **22.23.4 or newer in the 22.x line, 24.22.1 or newer in the 24.x line, or 26.12.1 or newer**, npm, and API keys for OpenAI and Jev. Use a supported Node.js release and keep it updated. Grocy and its API key are required for confirmation, but not for trying the sample.
 
 ```sh
 npm ci
